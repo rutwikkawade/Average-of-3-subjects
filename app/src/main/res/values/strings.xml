@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Testtwo</string>
+    <string-array name="courses">
+        <item>Select Course</item>
+        <item>MCA</item>
+        <item>MBA</item>
+    </string-array>
+</resources>

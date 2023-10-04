@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/backkk"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="विद्यार्थ्याचे नाव:"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/textViewName"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittextbackground"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textViewCourses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="अभ्यासक्रम निवडा:" />
+
+    <Spinner
+        android:id="@+id/spinnerCourses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCourses"
+        android:layout_marginTop="8dp"
+        android:entries="@array/courses" />
+
+    <TextView
+        android:id="@+id/textViewSubject1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerCourses"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="JAVA गुण:" />
+
+    <EditText
+        android:id="@+id/editTextSubject1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/textViewSubject1"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittextbackground"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textViewSubject2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextSubject1"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="DBMS गुण:" />
+
+    <EditText
+        android:id="@+id/editTextSubject2"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/textViewSubject2"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittextbackground"
+        android:inputType="numberDecimal" />
+    <TextView
+        android:id="@+id/textViewSubject3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextSubject2"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="SPM गुण:" />
+
+    <EditText
+        android:id="@+id/editTextSubject3"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/textViewSubject3"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/edittextbackground"
+        android:inputType="numberDecimal" />
+
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextSubject3"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittextbackground"
+        android:text="सबमिट" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSubmit"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="निकाल येथे प्रदर्शित केला जाईल" />
+
+</RelativeLayout>
